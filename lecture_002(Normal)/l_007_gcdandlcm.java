@@ -9,6 +9,18 @@ public class l_007_gcdandlcm {
         //gcdAndLcm2(a,b,c);
     }
     public static void gcdAndLcm(int a, int b) {
+	    int gcd = 0;
+	    int minVal = Math.min(a,b);
+	    for(int i=minVal; i>=1; i--) {
+	        if(a%i==0 && b%i==0) {
+	            gcd = i;
+	            System.out.println("Greatest Common Factor: " + gcd);
+	            break;
+	        }
+	    }
+	    System.out.println("Lowest Common Multiple: " + (a*b)/gcd);
+	}
+    public static void gcdAndLcm2(int a, int b) {
         int oa = a;
         int ob = b;
         while(a%b != 0) {
@@ -19,7 +31,7 @@ public class l_007_gcdandlcm {
         System.out.println("GCD: "+ b);
         System.out.println("LCM: "+ (oa*ob)/b);
     }
-    /* public static void gcdAndLcm2(int a, int b, int c) {
+    /* public static void gcdAndLcm3(int a, int b, int c) {
         int oa = a;
         int ob = b;
         int oc = c;
