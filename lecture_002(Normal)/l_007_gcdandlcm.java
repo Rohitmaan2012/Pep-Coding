@@ -18,7 +18,7 @@ public class l_007_gcdandlcm {
 	            break;
 	        }
 	    }
-	    System.out.println("Lowest Common Multiple: " + (a*b)/gcd);
+	    System.out.println("Lowest Common Multiple: " + (a*b)/gcd); 
 	}
     public static void gcdAndLcm2(int a, int b) {
         int oa = a;
